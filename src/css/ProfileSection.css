@@ -1,0 +1,44 @@
+.profile {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 80%;
+}
+.profile-name-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-name-image img {
+    border-radius: 50%;
+}
+
+.profile-user-name {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+
+.profile-stats {
+    margin-top: 2rem;
+}
+
+.profile-stats li {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+}
+
+.profile-bio {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 2.3rem;
+}
+
+
