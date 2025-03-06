@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/ProfileSection.css'; 
 import pfp from '../assets/imageProfile.jpg'
+import cardCount from './CardList.jsx'
 
+function ProfileSection({ cardCount }) {
 
-function ProfileSection() {
   return (
     <div className="profile">
       <div className="profile-name-image">
@@ -15,7 +16,7 @@ function ProfileSection() {
       </div>
       <div className="profile-stats">
         <ul>
-          <li>4 posts</li>
+          <li>{cardCount} posts</li>
           <li>188 followers</li>
           <li>206 following</li>
         </ul>

@@ -7,7 +7,7 @@ function MainSection(){
     return (
             
                 <main>
-                 <ProfileSection/>
+                 {/* <ProfileSection/> */}
                  <CardList/>
                 </main>
            
