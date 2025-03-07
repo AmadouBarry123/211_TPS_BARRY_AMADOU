@@ -5,12 +5,10 @@ import CardList from "./CardList";
 
 function MainSection(){
     return (
-            
-                <main>
-                 {/* <ProfileSection/> */}
-                 <CardList/>
-                </main>
-           
+            <main>
+                {/* <ProfileSection/> */}
+                <CardList/>
+            </main>
       );
 }
 

@@ -9,7 +9,7 @@ const cards = [
   { id: 2, image: photo2, titre: "Let's Go", description: "In Love With A Ghost" },
   { id: 3, image: photo3, titre: "The Beautiful Game", description: "Vulfpeck" },
   { id: 4, image: photo4, titre: "Jane Doe", description: "Converge" },
-  { id: 5, image: photo5, titre: "Naruto Uzumaki", description: "The best hokage" },
+  { id: 5, image: photo5, titre: "Naruto Uzumaki", description: "The best hokage" }, 
   
 ];
 

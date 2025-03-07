@@ -15,7 +15,6 @@ function Card(props) {
         <div className="card-description">
                 <h2>{props.titre}</h2>
                 <p>{props.description}</p>
-
             </div>
         </div>
     </div>

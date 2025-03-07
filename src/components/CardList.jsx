@@ -13,6 +13,8 @@ function CardList() {
     />
   ));
 
+  
+// Conteur de cards
   const cardCount = cards.length;
 
 
