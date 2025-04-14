@@ -1,0 +1,54 @@
+.MainTitle{
+    text-align: center;
+    color: aliceblue;
+
+}
+main{
+    background-color: rgba(210, 200, 200, 0.6);
+    width: 60%;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.inputGroup{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+}
+
+.inputTache{
+    width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.BonttonAjouter{
+    color: white;
+    background-color: rgb(182, 123, 237);
+    border-color: white;
+    border: solid white;
+    border-radius: 15px;
+}
+
+.BonttonAjouter:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: 1s;
+    border-color: black;
+}
+
+.BonttonAjouter:active{
+    width: 90px;
+    height: 40px;
+    transition: 1s;
+}
+
+
