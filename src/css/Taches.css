@@ -1,0 +1,47 @@
+.tacheElem {
+    background-color: rgba(97, 216, 239, 0.703);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    height: 100px;
+    width: 100%;
+    max-width: 700px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tacheElem:hover{
+    background-color: rgba(134, 213, 231, 0.703);
+    transition: 0.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tache{
+    color: white;
+}
+
+.tache:hover{
+    color: rgba(255, 255, 255, 0.377);
+    cursor: pointer;
+}
+
+.iconChek{
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    color: rgb(48, 210, 48);
+    width: 40px;
+    height: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.ButtonEtat{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    width: 80px;
+}
+
+.ButtonEtat:hover{
+    cursor: pointer;
+}
