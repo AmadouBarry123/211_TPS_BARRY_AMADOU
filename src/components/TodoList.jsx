@@ -9,6 +9,7 @@ function TodoList(){
         e.preventDefault();
         setTaches([...taches, tache]);
         setTache("")
+        if (tache.trim() === "") return;
     }
 
     return (
