@@ -43,6 +43,7 @@ main{
     background-color: white;
     transition: 1s;
     border-color: black;
+    cursor: pointer;
 }
 
 .BonttonAjouter:active{
