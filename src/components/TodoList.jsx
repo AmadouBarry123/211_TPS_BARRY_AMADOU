@@ -1,12 +1,32 @@
 import '../css/TodoList.css'
 import { useState } from 'react';
 import Taches from "./Taches";
-import { IoMdCheckboxOutline } from "react-icons/io";
+
 
 function TodoList(){
     const [tache , setTache] = useState("");
     const [taches , setTaches] = useState([]);
     const [compteurDeTache, setCompteurDeTache] = useState(1);
+
+// status des taches
+function statusTache(id){
+    const nouvellesTaches = taches.map((ta) =>{
+        if (ta.id === id){
+            return { ...ta, status: !ta.status }
+        }
+        return ta;
+    })
+
+// Boutton Suprimer
+function supprimerTache(id){
+    // const nouvellesTaches = tach
+    // setTaches(nouvellesTaches);
+}
+
+
+    
+    setTaches(nouvellesTaches);
+}
 
     function handleSubmit(e){
         e.preventDefault();
@@ -16,7 +36,7 @@ function TodoList(){
         const nouvelleTache = {
             id : compteurDeTache,
             description: tache,
-            status: true
+            status: true,
         };
 
         setTaches([...taches, nouvelleTache]);
@@ -46,7 +66,7 @@ function TodoList(){
 
             <ul className='listeTaches'>
                 {taches.map((tacheItem) => (
-                    <Taches key={tacheItem.id} tache={tacheItem} />
+                    <Taches key={tacheItem.id} tache={tacheItem} statusTache={statusTache}/>
                 ))}
             </ul>
         </main>
