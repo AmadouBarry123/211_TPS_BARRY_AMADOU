@@ -3,10 +3,22 @@
     color: aliceblue;
 }
 
+.selectPriorite{
+    border: none;
+    border-radius: 12px;
+    color: grey;
+    width: 80px;
+
+}
+
+.selectPriorite:hover{
+    cursor: pointer;
+}
+
 main {
-    background-color: rgba(210, 200, 200, 0.6);
+    background-color: #00B3AD;
     width: 60%;
-    border: solid rgba(0, 0, 0, 0.263);
+    border: solid rgba(255, 252, 252, 0.877);
     display: flex;
     flex-direction: column; 
     align-items: center;

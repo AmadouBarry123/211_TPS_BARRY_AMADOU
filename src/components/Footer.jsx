@@ -4,7 +4,7 @@ function Footer(){
     return(
         <>
         <footer className='footer'>
-            <span>© 2025 Cégep Marie-Victorin</span>
+            <span>© 2025 Cégep Marie-Victorin Amadou</span>
         </footer>
         
         </>

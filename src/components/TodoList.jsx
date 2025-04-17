@@ -1,12 +1,37 @@
 import '../css/TodoList.css'
 import { useState } from 'react';
 import Taches from "./Taches";
-
+import CategorieTache from './CategorieTache';
 
 function TodoList(){
     const [tache , setTache] = useState("");
     const [taches , setTaches] = useState([]);
     const [compteurDeTache, setCompteurDeTache] = useState(1);
+
+    // test
+    // const [categories, setCategories] = useegorieSelectionnee] = useState(null);
+    // const [compteurDeCategorie, setCompteurDeCategorie] = useState(1);
+    
+    // function ajouterCategorie(nomCategorie) {State([]);
+    // const [categorieSelectionnee, setCat
+    //     if (nomCategorie.trim() === "") return;
+    
+    //     const nouvelleCategorie = {
+    //         id: compteurDeCategorie,
+    //         nom: nomCategorie,
+    //         taches: []
+    //     };
+    //     setCompteurDeCategorie(compteurDeCategorie + 1);
+    //     setCategories([...categories, nouvelleCategorie]);
+    // }
+
+    // source https://github.com/Espadv69/Priority-ToDo-List/tree/main/src/components
+    //  https://codesandbox.io/p/sandbox/priority-todo-list-je2esb?file=%2Fsrc%2Findex.js%3A15%2C25
+    //  https://github.com/WebGuyAshis/Todo-List-React-Project2
+
+    const [priorite , setPriorite] = useState(1)
+
+    
 
 // status des taches
 function statusTache(id){
@@ -15,18 +40,18 @@ function statusTache(id){
             return { ...ta, status: !ta.status }
         }
         return ta;
-    })
-
-// Boutton Suprimer
-function supprimerTache(id){
-    // const nouvellesTaches = tach
-    // setTaches(nouvellesTaches);
-}
-
-
-    
+    }) 
     setTaches(nouvellesTaches);
 }
+
+
+    // Boutton Suprimer
+    function supprimerTache(id){
+        const nouvellesTaches = taches.filter((ta ) => ta.id !== id);
+        setTaches(nouvellesTaches);
+    }
+
+
 
     function handleSubmit(e){
         e.preventDefault();
@@ -37,6 +62,7 @@ function supprimerTache(id){
             id : compteurDeTache,
             description: tache,
             status: true,
+            priorite: priorite,
         };
 
         setTaches([...taches, nouvelleTache]);
@@ -60,13 +86,28 @@ function supprimerTache(id){
                         value={tache}
                         onChange={(e) => setTache(e.target.value)}
                     />
+
+                        <select
+                        className='selectPriorite'
+                        value={priorite}
+                        onChange={(e) => setPriorite(parseInt(e.target.value))}
+                        >
+                        {[...Array(10)].map((_, i) => (
+                            <option key={i + 1} value={i + 1}>Priorité {i + 1}</option>
+                        ))}
+                        </select>
+
                     <button className='BonttonAjouter'>Ajouter</button>
+                    
                 </div>
+                {/* <CategorieTache/> */}
             </form>
 
+
+
             <ul className='listeTaches'>
-                {taches.map((tacheItem) => (
-                    <Taches key={tacheItem.id} tache={tacheItem} statusTache={statusTache}/>
+                {taches .sort((a,b)=> b.priorite - a.priorite) .map((tacheItem) =>(
+                    <Taches key={tacheItem.id} tache={tacheItem} statusTache={statusTache} supprimerTache={supprimerTache}/>
                 ))}
             </ul>
         </main>

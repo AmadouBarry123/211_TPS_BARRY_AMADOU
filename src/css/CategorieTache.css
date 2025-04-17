@@ -1,0 +1,38 @@
+.ajouterCategorie {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.inputCategorie {
+  flex: 1;
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.boutonCategorie {
+  color: white;
+  background-color: rgb(182, 123, 237);
+  border: solid white;
+  border-radius: 15px;
+  padding: 0 20px;
+  height: 40px;
+}
+
+.boutonCategorie:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  transition: 0.3s;
+  border-color: black;
+  cursor: pointer;
+}
+
+.boutonCategorie:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
