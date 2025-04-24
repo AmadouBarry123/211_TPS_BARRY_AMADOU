@@ -1,24 +1,95 @@
 .inputButtons {
-    background-color: rgb(138, 137, 137);
+    background-color: rgba(138, 137, 137, 0.183);
     width: fit-content;
     margin: 0 auto; 
     padding: 20px;
     border-radius: 8px;
-
+    padding-top: 50px;
 }
 
 .texteDuHaut {
     display: block;
     margin-bottom: 10px;
     width: 90%;
+
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    padding: 5px;
 }
+
 
 
 .texteDuBas{
     display: block;
     width: 90%;
+
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    padding: 5px;
 }
 
 .buttonImage{
-    width: 95%;
+    width: 92.2%;
+    max-width: 92.2%;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
 }
+
+
+.buttonImage:hover{
+    background: grey;
+    transition: 2s;
+    cursor: pointer;
+    border-width: 0.5px;
+}
+
+.poubelle{
+    border-radius: 15px;
+    border: solid black;
+    height: 40px;
+    border-width: 2px;
+}
+
+.poubelle:hover{
+    color: red;
+    transition: 1s;
+}
+
+.memeGenerat{
+    width: 90%;
+}
+
+.memeContainer {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  
+  .blagueHaut,
+  .blagueBas {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    color: rgb(213, 45, 45);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    padding: 10px;
+    text-align: center;
+
+  }
+  
+  .blagueHaut {
+    top: 10px;
+  }
+  
+  .blagueBas {
+    bottom: 10px;
+  }
+  

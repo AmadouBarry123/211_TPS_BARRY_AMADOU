@@ -1,9 +1,11 @@
 header {
-    background-color: rgb(69, 134, 104);
+    background-color: rgb(65, 68, 67);
     color: white;
     text-align: center;
     width: 100%;
     padding: 20px 0;
+    margin-bottom: 8%;
+    height: 80px;
 }
 
 body, html {
