@@ -1,0 +1,20 @@
+header {
+    background-color: rgb(69, 134, 104);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: inline;
+}
+
+h5 {
+    display: inline;
+}

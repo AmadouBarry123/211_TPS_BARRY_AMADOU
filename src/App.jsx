@@ -1,18 +1,16 @@
-import React from 'react';
+import React from "react"
+import Header from "./components/Header"
+import MainContent from "./components/MainContent"
+
+export default function App() {
+  const [name, setName] = React.useState("")
 
 
-
-function App() {
-
-
-
-
-  return(
-    <>
-
-      salut
-    </>
+  return (
+      <>
+        <Header/>
+        <MainContent/>
+      </>
   )
-
 }
-export default App
+
