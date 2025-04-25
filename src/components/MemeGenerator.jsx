@@ -9,7 +9,7 @@ const[blagueHaut, setBlagueHaut] = useState("")
 const [blagueBas , setBlagueBas] = useState("")
 
 // UseState pour changer le meme afficher
-const [imageIndex, setImageIndex] = useState(0)
+const [imageIndex, setImageIndex] = useState(Math.floor(Math.random() * 99 ))
 
 useEffect(() => {
     fetch('https://api.imgflip.com/get_memes')
@@ -50,7 +50,7 @@ function handleBlagueBas(event){
             <div className=" inputButtons">
                 <input className="texteDuHaut" type="text" placeholder="Texte Du Haut" value={blagueHaut}   onChange={handleBlagueHaut}/>
                 <input className='texteDuBas' type="text" placeholder="Texte Du Bas" value={blagueBas} onChange={handleBlagueBas}/>
-                <button className= "buttonImage" onClick={nouvelleImage} >Afficher le prochain Meme</button>
+                <button className= "buttonImage" onClick={nouvelleImage} >Afficher un meme aleatoire</button>
                 <button className='poubelle' onClick={resetMemeTexte}> <MdDelete /></button>
                 {/* Verifie et sassur que meme ne soit pas vide */}
                 <div className='memeContainer'>
