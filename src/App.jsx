@@ -1,25 +1,18 @@
-import React from 'react';
-import Header from './components/Header';
-import MainSection from './components/MainSection';
-import Footer from './components/Footer';
-import ProfileSection from './components/ProfileSection'
-import Card from './components/Card';
-import cards from './assets/cards';
+import React from 'react'
+import './components/NavBar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/NavBar'
+import MainContent from './components/MainContent';
+// import UncontrolledExample from './BootstrapComponents/UncontrolledExample';
+
 
 function App() {
 
-
-
-
   return(
-    <>
+    < >
       <Header/>
-      <MainSection/>
-      {/* <div>{cardElements}</div> */}
-
-      <Footer/>
-
-      
+      <MainContent/>
+      {/* <UncontrolledExample/> */}
     </>
   )
 
