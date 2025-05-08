@@ -80,3 +80,20 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+.presentationPerso .traitsEtInterets :hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ;
+    transition: 1s; 
+    cursor: pointer;
+}
+
+
+.presentationPerso .traitsEtInterets :active {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+
+/* Presentation Professionnelle */
