@@ -3,13 +3,12 @@ import React from "react";
 import chillGuy from '../assets/chillguy2.webp';
 import AccoCheminement from '../BootstrapComponents/AccoCheminement';
 
-
 function MainContent() {
   return (
     <div>
       <div className="presentationPerso">
         <h2 id="perso">Présentation personnelle</h2>
-        
+
         <img src={chillGuy} alt="" />
         <p>
           Je me nomme Amadou Barry et je suis un étudiant 
@@ -45,13 +44,28 @@ function MainContent() {
         </div>
       </div>
 
-     {/* Presentation Professionnelle */}
-
+      {/* Présentation Professionnelle */}
       <div id="profes" className="presentationProfessionnelle">
         <h2>Présentation Professionnelle</h2>
+      </div>
+      
+      <AccoCheminement />
+
+
+
+
+      {/* Projet Informatique */}
+
+      
+      <div id="info" className="projetInformatique">
+        <h2>Projets informatiques</h2>
+        <p>
+          Voici quelques projets informatiques que j'ai réalisés .
+        </p>
+
+
 
       </div>
-      <AccoCheminement/>
     </div>
   );
 }

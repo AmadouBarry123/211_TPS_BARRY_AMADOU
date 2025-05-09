@@ -95,7 +95,17 @@
 
 
 .presentationProfessionnelle{
-    padding-top: 8%;
+    padding-top: 5%;
     padding-left: 6%;
     text-align: center; 
+}
+
+
+/* Presentation de Projet Informatique */
+
+.projetInformatique{
+    padding-top: 5%;
+    padding-left: 6%;
+    text-align: center; 
+        
 }

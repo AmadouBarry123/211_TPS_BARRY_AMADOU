@@ -24,11 +24,9 @@ function CollapsibleExample() {
             <Nav.Link href="#profes">Presentation professionnelle</Nav.Link>
             <Nav.Link href="#info">Projets informatiques</Nav.Link>
             <NavDropdown title="Navigation" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Home Page</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"> Formulaire d'ajout de projets</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">API</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
