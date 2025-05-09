@@ -2,6 +2,10 @@ import "../css/MainContent.css";
 import React from "react";
 import chillGuy from '../assets/chillguy2.webp';
 import AccoCheminement from '../BootstrapComponents/AccoCheminement';
+import ProjetInfo from '../BootstrapComponents/ProjetInfo';
+import projets from '../assets/projet.js';
+import { useState } from "react";
+
 
 function MainContent() {
   return (
@@ -62,8 +66,19 @@ function MainContent() {
         <p>
           Voici quelques projets informatiques que j'ai réalisés .
         </p>
+        <div className="projet-container">
 
-
+          {projets.map((projet) => (
+            <ProjetInfo
+              key={projet.id}
+              image={projet.image}
+              titre={projet.titre}
+              description={projet.description}
+              dateRealisation={projet.dateRealisation}
+            />
+          ))}
+        </div>
+        
 
       </div>
     </div>
