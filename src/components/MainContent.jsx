@@ -8,7 +8,7 @@ function MainContent() {
   return (
     <div>
       <div className="presentationPerso">
-        <h2>Présentation personnelle</h2>
+        <h2 id="perso">Présentation personnelle</h2>
         
         <img src={chillGuy} alt="" />
         <p>
@@ -47,7 +47,7 @@ function MainContent() {
 
      {/* Presentation Professionnelle */}
 
-      <div className="presentationProfessionnelle">
+      <div id="profes" className="presentationProfessionnelle">
         <h2>Présentation Professionnelle</h2>
 
       </div>
