@@ -3,8 +3,7 @@ import './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/NavBar'
 import MainContent from './components/MainContent';
-// import UncontrolledExample from './BootstrapComponents/UncontrolledExample';
-
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,7 +11,8 @@ function App() {
     < >
       <Header/>
       <MainContent/>
-      {/* <UncontrolledExample/> */}
+      <Footer/>
+      
     </>
   )
 

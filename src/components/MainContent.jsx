@@ -1,6 +1,8 @@
 import "../css/MainContent.css";
 import React from "react";
 import chillGuy from '../assets/chillguy2.webp';
+import AccoCheminement from '../BootstrapComponents/AccoCheminement';
+
 
 function MainContent() {
   return (
@@ -24,6 +26,7 @@ function MainContent() {
               <li>Créatif</li>
               <li>Persévérant</li>
               <li>Curieux</li>
+              <li>Persuasif</li>
             </ul>
           </div>
 
@@ -36,6 +39,7 @@ function MainContent() {
               <li>Sport</li>
               <li>Dormir</li>
               <li>Musique</li>
+              <li>Manger</li>
             </ul>
           </div>
         </div>
@@ -45,7 +49,9 @@ function MainContent() {
 
       <div className="presentationProfessionnelle">
         <h2>Présentation Professionnelle</h2>
+
       </div>
+      <AccoCheminement/>
     </div>
   );
 }

@@ -1,8 +1,3 @@
-.presentationPerso {
-    padding-top: 10%;
-    padding-left: 6%;
-    text-align: center; 
-}
 
 .presentationPerso img {
     width: 150px;
@@ -38,7 +33,7 @@
 
 
 .presentationPerso {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-left: 6%;
     text-align: center; 
 }
@@ -97,3 +92,10 @@
 
 
 /* Presentation Professionnelle */
+
+
+.presentationProfessionnelle{
+    padding-top: 8%;
+    padding-left: 6%;
+    text-align: center; 
+}
