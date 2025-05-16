@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function MainContent() {
   return (
-    <div>
+    <div style={{ marginTop: "100px" }}>
       <div className="presentationPerso">
         <h2 id="perso">Présentation personnelle</h2>
 

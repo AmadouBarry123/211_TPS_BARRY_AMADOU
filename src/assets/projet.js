@@ -10,7 +10,7 @@ const projets = [
         image: chillGuy,
     },
         {
-        id: 1,
+        id: 2,
         titre: "Meme Generator",
         description: "Un site web pour créer et gérer des memes",
         technologies: "HTML, CSS  , JavaScript et React",
