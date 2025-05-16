@@ -1,7 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import "../css/MainContent.css";
 
-
+// https://react-bootstrap.netlify.app/docs/components/accordion/
 function AccoCheminement() {
   return (
     <Accordion defaultActiveKey="0">

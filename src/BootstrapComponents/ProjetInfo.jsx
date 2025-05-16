@@ -3,6 +3,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 // import chillGuy from '../assets/chillguy2.webp';
 import '../css/ProjetInfo.css';
 import React from 'react';
+// https://react-bootstrap.netlify.app/docs/components/cards/
+
 
 function ProjetInfo({ image, titre, description, dateRealisation, technologies}) {
   return (
