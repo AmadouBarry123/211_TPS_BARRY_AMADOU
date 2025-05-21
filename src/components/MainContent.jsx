@@ -67,7 +67,7 @@ function MainContent() {
           Voici quelques projets informatiques que j'ai réalisés .
         </p>
         <div className="projet-container">
-
+           
           {projets.map((projet) => (
             <ProjetInfo
               key={projet.id}

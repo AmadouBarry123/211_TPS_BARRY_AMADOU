@@ -5,7 +5,7 @@ import '../css/ProjetInfo.css';
 import React from 'react';
 // https://react-bootstrap.netlify.app/docs/components/cards/
 
-
+ 
 function ProjetInfo({ image, titre, description, dateRealisation, technologies}) {
   return (
 

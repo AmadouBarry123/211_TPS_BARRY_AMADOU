@@ -24,28 +24,31 @@ function ApiMeteo() {
 
   const keyApi = '59ffe86ffd5d575ae8aa25920624fe86';
 
-  const fetchData = async () => {
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=fr&units=metric&appid=${keyApi}`)
-      .then((response) => {
-        const weatherData = {
-          name: response.data.name,
-          temp: response.data.main.temp,
-          humidity: response.data.main.humidity,
-          description: response.data.weather[0].description,
-          pressure: response.data.main.pressure
-        };
-        setDonnees(weatherData);
-        localStorage.setItem('weatherNom', weatherData.name);
-        localStorage.setItem('weatherTemp', weatherData.temp.toString());
-        localStorage.setItem('weatherHumidity', weatherData.humidity.toString());
-        localStorage.setItem('weatherDescription', weatherData.description);
-        localStorage.setItem('weatherPressure', weatherData.pressure.toString());
-      })
-      .catch(error => {
-        console.error('Error fetching weather data:', error);
-        alert("nom de ville introuvable");
-      });
-  };
+const [historyIndex, setHistoryIndex] = useState(0);
+
+const fetchData = async () => {
+  try {
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=fr&units=metric&appid=${keyApi}`);
+    const weatherData = {
+      name: response.data.name,
+      temp: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      pressure: response.data.main.pressure
+    };
+
+    setDonnees(weatherData);
+
+    let history = JSON.parse(localStorage.getItem('weatherHistory')) || [];
+    history.push(weatherData);
+    localStorage.setItem('weatherHistory', JSON.stringify(history));
+    setHistoryIndex(history.length - 1);
+
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
+    alert("nom de ville introuvable");
+  }
+};
 
   return (
     <div className="meteo-box">
