@@ -11,7 +11,7 @@ function MainContent() {
   return (
     <div style={{ marginTop: "100px" }}>
       <div className="presentationPerso">
-        <h2 id="perso">Présentation personnelle</h2>
+        <h2 id="perso">Présentation personnelle de <span style={{color: "grey"}}>Amadou</span></h2>
 
         <img src={chillGuy} alt="" />
         <p>
@@ -74,6 +74,7 @@ function MainContent() {
               image={projet.image}
               titre={projet.titre}
               description={projet.description}
+              technologies={projet.technologies}
               dateRealisation={projet.dateRealisation}
             />
           ))}
