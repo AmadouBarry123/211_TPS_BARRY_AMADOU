@@ -1,21 +1,21 @@
 .projet-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); /* Augmente la taille minimale des éléments */
-  gap: 5px 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   margin: 20px;
 }
 
 .projet-card {
+  flex: 1 1 30%;
+  max-width: 32%;
+  min-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   margin: 0;
   background-color: #f8f9fa;
