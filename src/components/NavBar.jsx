@@ -34,7 +34,7 @@ function NavbarN() {
             <NavDropdown title="Navigation" id="collapsible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/">Home Page</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/ajout-projets">Formulaire d'ajout de projets</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/api-pokemon">API Pokemon</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/api-meteo">API Meteo</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>

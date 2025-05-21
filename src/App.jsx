@@ -8,7 +8,7 @@ import Header from './components/NavBar';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import AjoutProjets from './pages/AjoutProjets'; 
-import ApiPokemon from './pages/ApiPokemon';
+import ApiMeteo from './pages/ApiMeteo';
 function App() {
   return (
     <Router>
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/ajout-projets" element={<AjoutProjets />} />
-        <Route path="/api-pokemon" element={<ApiPokemon />} />
+        <Route path="/api-meteo" element={<ApiMeteo/>} />
     
       </Routes>
       <Footer />
