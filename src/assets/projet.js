@@ -17,6 +17,14 @@ const projets = [
         dateRealisation: "2023-01-15",
         image: chillGuy,
     },
+            {
+        id: 2,
+        titre: "Meme Generator",
+        description: "Un site web pour créer et gérer des memes",
+        technologies: "HTML, CSS  , JavaScript et React",
+        dateRealisation: "2023-01-18",
+        image: chillGuy,
+    },
     
     
 
