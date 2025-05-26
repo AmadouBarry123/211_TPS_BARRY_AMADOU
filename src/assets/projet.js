@@ -3,6 +3,8 @@ import animation from './deepProjetAnimation.png';
 import game from './GameProject.png';
 import art from './ProjetArtInfo.png';
 
+
+// liste qui allimente la page projet
 const projets = [
     {
         id: 1,

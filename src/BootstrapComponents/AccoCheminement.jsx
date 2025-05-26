@@ -3,6 +3,7 @@ import "../css/MainContent.css";
 
 // https://react-bootstrap.netlify.app/docs/components/accordion/
 function AccoCheminement() {
+  // Affiche presentation personnelle
 return (
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">

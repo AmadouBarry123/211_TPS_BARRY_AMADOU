@@ -110,3 +110,21 @@
     text-align: center; 
         
 }
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333333;
+  color: #000000;
+}
+
+.dark-mode .colonne,
+.dark-mode .projetInformatique,
+.dark-mode .presentationProfessionnelle {
+  background-color: #444;
+  color: #F5F5F5;
+}
