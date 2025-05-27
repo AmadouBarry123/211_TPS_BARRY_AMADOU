@@ -27,27 +27,28 @@ function NavbarN() {
 
 
      <Container>
-        // Routeur pour ramener a la page d'accueil 
+        {/* // Routeur pour ramener a la page d'accueil  */}
         <Navbar.Brand as={Link} to="/">Mon ePortofolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav className="me-auto">
-            // Defuker kes sectuibs de la page
+            {/* // Defuker kes sectuibs de la page */}
             <Nav.Link href="#perso" className='test'>Présentation personnelle</Nav.Link>
             <Nav.Link href="#profes">Présentation professionnelle</Nav.Link>
             <Nav.Link href="#info">Projets informatiques</Nav.Link>
 
-            // DropDown pour aller sur les autres pages
+            {/* // DropDown pour aller sur les autres pages */}
             <NavDropdown title="Navigation" id="collapsible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/">Home Page</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/ajout-projets">Formulaire d'ajout de projets</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/api-pokemon">API Pokemon</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/api-meteo">API Meteo</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
             <Nav.Link eventKey={2} href="#">
-              // Active ou desactive le mode sombre
+              {/* // Active ou desactive le mode sombre */}
               <button
                 onClick={toggleDarkMode}
                 style={{

@@ -1,3 +1,4 @@
+// MainContent.jsx
 import "../css/MainContent.css";
 import React from "react";
 import chillGuy from '../assets/chillguy2.webp';
@@ -5,17 +6,15 @@ import AccoCheminement from '../BootstrapComponents/AccoCheminement';
 
 // import projet info
 import ProjetInfo from '../BootstrapComponents/ProjetInfo';
-// import la bd pour les projets
-import projets from '../assets/projet.js';
-import { useState } from "react";
+// ici, on ne va plus importer les projets depuis le fichier
+// import projets from '../assets/projet.js'; 
 
-
-function MainContent() {
+function MainContent({ projets }) { // je reçois mes projets en props
   return (
     // espace de la page principale
     <div style={{ marginTop: "100px" }}>
       <div className="presentationPerso">
-        // se situe a la section en question (id)
+        {/* // se situe à la section en question (id) */}
         <h2 id="perso">Présentation personnelle de <span style={{color: "grey"}}>Amadou</span></h2>
 
         <img src={chillGuy} alt="" />
@@ -60,19 +59,14 @@ function MainContent() {
       
       <AccoCheminement />
 
-
-
-
       {/* Projet Informatique */}
-
-      
       <div id="info" className="projetInformatique">
         <h2>Projets informatiques</h2>
         <p>
           Voici quelques projets informatiques que j'ai réalisés .
         </p>
         <div className="projet-container">
-          // on map sur la liste de projets et on affiche chaque projet
+          {/* // on map sur la liste de projets et on affiche chaque projet */}
           {projets.map((projet) => (
             <ProjetInfo
               key={projet.id}
@@ -84,8 +78,6 @@ function MainContent() {
             />
           ))}
         </div>
-        
-
       </div>
     </div>
   );
